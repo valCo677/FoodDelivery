@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FoodDelivery {
+    public static void main( String[] args ) {
+        Scanner scanner = new Scanner(System.in);
+        Double chicken = Double.parseDouble ( scanner.nextLine () );
+        Double fish = Double.parseDouble ( scanner.nextLine () );
+        Double vegan = Double.parseDouble ( scanner.nextLine () );
+        double chickenMenu = chicken*10.35;
+        double fishMenu = fish*12.40;
+        double veganMenu = vegan*8.15;
+        double delivery = 2.50;
+        double TotalMenu = (chickenMenu + fishMenu + veganMenu );
+        double desert = TotalMenu*0.20;
+        double TotalInvoice = TotalMenu + desert + delivery;
+        System.out.println (TotalInvoice);
+
+
+
+    }
+}
